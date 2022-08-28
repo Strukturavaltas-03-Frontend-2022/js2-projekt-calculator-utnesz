@@ -1,13 +1,9 @@
 const toDisplay = document.querySelector(".disp");
 
-
-
 const input = document.querySelectorAll(".btn");
-for(var i = 0; i < elements.lenght; i += 1) {
-    toDisplay(i);
+for(var i = 0; i < input.length; i += 1) {
+    output(i);
 }
-
-    
 const output = () => {
     toDisplay.innerHTML += input;
 };
