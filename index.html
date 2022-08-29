@@ -12,24 +12,27 @@
 </head>
 <body>
     <div class="grid_container">
-        <div class="div1 disp" id="disp"></div>
-        <div class="div2 op" >  <button onclick="output()" id="plus" class="btn btn_plus" type="button" class="operator" value="+">+</button></div>
-        <div class="div3 op" >  <button onclick="output()" id="minus" class="btn btn_minus" type="button" class="operator" value="-">-</button></div>
-        <div class="div4 op" >  <button onclick="output()" id="mult" class="btn btn_mult" type="button" class="operator" value="*">x</button></div>
-        <div class="div5 op" >  <button onclick="output()" id="divi" class="btn btn_divi" type="button" class="operator" value="/">÷</button></div>
-        <div class="div6 num" > <button onclick="output()" id="7" class="btn btn_num" type="button" value="7">7</button></div>
-        <div class="div7 num" > <button onclick="output()" id="8" class="btn btn_num" type="button" value="8">8</button></div>
-        <div class="div8 num" > <button onclick="output()" id="9" class="btn btn_num" type="button" value="9">9</button></div>
-        <div class="div9 num" > <button onclick="output()" id="4" class="btn btn_num" type="button" value="4">4</button></div>
-        <div class="div10 num" ><button onclick="output()" id="5" class="btn btn_num" type="button" value="5">5</button></div>
-        <div class="div11 num" ><button onclick="output()" id="6" class="btn btn_num" type="button" value="6">6</button></div>
-        <div class="div12 num" ><button onclick="output()" id="1" class="btn btn_num" type="button" value="1">1</button></div>
-        <div class="div13 num" ><button onclick="output()" id="2" class="btn btn_num" type="button" value="2">2</button></div>
-        <div class="div14 num" ><button onclick="output()" id="3" class="btn btn_num" type="button" value="3">3</button></div>
-        <div class="div15 num" ><button onclick="output()" id="0" class="btn btn_num" type="button" value="0">0</button></div>
-        <div class="div16 num" ><button onclick="output()" id="." class="btn btn_num" type="button" class="dec" value=".">.</button></div>
-        <div class="div17 num" ><button onclick="output()" id="C" class="btn btn_C" type="button" class="clear" value="clear">C</button></div>
-        <div class="div18 op" > <button onclick="output()" id="equal" class="btn btn_eq" type="button" class="equal" value="=">=</button></div>
+        <div class="div1 disp" id="disp">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <div class="div2 op"><button data-operation class="btn_op">+</button></div>
+        <div class="div3 op"><button data-operation class="btn_op">-</button></div>
+        <div class="div4 op"><button data-operation class="btn_op">x</button></div>
+        <div class="div5 op"><button data-operation class="btn_op">÷</button></div>
+        <div class="div6 num"><button data-number>7</button></div>
+        <div class="div7 num"><button data-number>8</button></div>
+        <div class="div8 num"><button data-number>9</button></div>
+        <div class="div9 num"><button data-number>4</button></div>
+        <div class="div10 num"><button data-number>5</button></div>
+        <div class="div11 num"><button data-number>6</button></div>
+        <div class="div12 num"><button data-number>1</button></div>
+        <div class="div13 num"><button data-number>2</button></div>
+        <div class="div14 num"><button data-number>3</button></div>
+        <div class="div15 num"><button data-number>0</button></div>
+        <div class="div16 num"><button data-number>.</button></div>
+        <div class="div17 num"><button data-all-clear>C</button></div>
+        <div class="div18 op"> <button data-equals class="btn_eq">=</button></div>
     </div>
     <script src="main.js"></script>
 </body>
